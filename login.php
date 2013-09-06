@@ -31,7 +31,7 @@ echo "password:";?>
         if(isset($_POST['login']) && $_POST['login'] === "Olivier")
         {
             $expire = 365*24*3600;
-            setcookie("login","gender",time()+$expire);
+            setcookie("login","$_POST['login']",time()+$expire);
             header("Location: secret.php");
             //setcookie("cookie[login]", "login");
             //setcookie("cookie[gender]", "gender");
