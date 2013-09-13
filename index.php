@@ -4,10 +4,8 @@
     <title></title>
 </head>
 <body>
-<? php
-header('Location: header.php');
+<?php
 include("header.php");
 ?>
-<a href="header.php">header</a>
 </body>
 </html>
